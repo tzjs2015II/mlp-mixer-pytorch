@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+data/*
+mixture_model_pytorch/*
+MNIST/*
