@@ -22,7 +22,7 @@ def FeedForward(dim, expansion_factor = 4, dropout = 0., dense = nn.Linear):
         dense(inner_dim, dim),
         nn.Dropout(dropout)
     )
-
+# 程序入口
 def MLPMixer(*, image_size, channels, patch_size, dim, depth, num_classes, expansion_factor = 4, expansion_factor_token = 0.5, dropout = 0.):
     image_h, image_w = pair(image_size)
     assert (image_h % patch_size) == 0 and (image_w % patch_size) == 0, 'image must be divisible by patch size'
